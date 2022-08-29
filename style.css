@@ -82,7 +82,7 @@ header {
 }
 
 .preview {
-    background: url(/assets/img/preview.jpg) center / cover;;
+    background: url("./assets/img/preview.jpg") center / cover;;
     height: 100vh;
 
 }
