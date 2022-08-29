@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+:root {
+    --bg-odd: #0D0D0D;
+    --bg-background: #272727;
+    --bg-white: #fff;
+    --bg-orange: #f60;
+    --bg-yellow6: #f60;
+}
+
+header {
+    position: sticky;
+    top: 0;
+
+    height: 100px;
+
+    background-color: var(--bg-background);
+    color: var(--bg-white);
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.container {
+    max-width: 1420px;
+    margin: 0 auto;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+}
+
+.navbar ul {
+    list-style: none;
+
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.toLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.toLeft img {
+    width: 150px;
+
+}
+
+.toRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.preview {
+    background: url(/assets/img/preview.jpg) center / cover;;
+    height: 100vh;
+
+}
+
+.text-preview {
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.first-pre h1 {
+    font-size: 9em;
+    color: var(--bg-white);
+    text-transform: uppercase;
+    text-align: left;
+
+}
+
+.second-pre h1 {
+    font-size: 9em;
+    color: var(--bg-white);
+    text-transform: uppercase;
+    text-align: right;
+
+}
+
+.advantages {
+    background-color: var(--bg-odd);
+    z-index: 10;
+
+}
+
+.advantages-title {
+    padding-top: 75px;
+
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr auto;
+
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+}
+
+.advantages-grid .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+.advantages-grid .card__text {
+    margin-top: 22px;
+
+}
+
+.advantages-grid .card__text p {
+    font-size: 20px;
+
+}
+
+.advantages-grid .card__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    
+    border-radius: 50%;
+
+    width: 175px;
+    height: 175px;
+
+}
+
+.advantages-grid .arrow {
+    margin-top: 75px;
+
+}
+
+.price {
+    background-color: #272727;
+    padding-bottom: 75px;
+
+}
+
+
+.price-title {
+    padding-top: 75px;
+
+}
+
+.box-group {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.box {
+    width: 400px;
+
+    border-width: 2px;
+    border-color: var(--bg-orange);
+    border-style: solid;
+
+}
+
+.box-body {
+    margin: 15px;
+
+}
+
+.price .first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.price .second {
+    margin-top: 20px;
+
+}
+
+.price .second .text {
+    font-size: 18px;
+    line-height: 25px;
+    
+}
+
+.invite {
+    height: 328px;
+    background-color: var(--bg-orange);
+    overflow: hidden;
+
+}
+
+.invite .first h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+
+}
+
+.body-inv {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tpToAdvantages {
+    padding-top: 45px;
+    margin-top: -45px;   
+
+}
+
+.contacts {
+    background-color: var(--bg-odd);
+    
+}
+
+.tpToPrice {
+    padding-top: 45px;
+    margin-top: -45px;   
+
+}
+
+.contacts {
+    padding-top: 56px;
+    padding-bottom: 78px;
+    background-color: var(--bg-odd);
+
+}
+
+.contacts .contacts__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contacts__block__left__text {
+    margin-top: 25px;
+    max-width: 400px;
+
+}
+
+.contacts .phone {
+    margin-top: 43px;
+    display: flex;
+
+}
+
+.contacts .phone .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+
+    width: 277px;
+    height: 68px;
+
+}
+
+.contacts .phone .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 68px;
+    
+    background: var(--bg-yellow6);
+    border-radius: 10px;
+
+}
+
+.contacts .mail {
+    margin-top: 25px;
+    display: flex;
+
+}
+
+.contacts .mail .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+
+    width: 277px;
+    height: 68px;
+
+}
+
+.contacts .mail .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 68px;
+    
+    background: var(--bg-yellow6);
+    border-radius: 10px;
+
+}
+
+.contacts .copyright {
+    margin-top: 19px;
+
+}
+
+#cameraBtn {
+    cursor: pointer;
+
+}
+
+.camera {
+    position: flex;
+    display: none;
+    opacity: 0;
+    height: 0;
+
+}
+
+.camera.is-active {
+    position: fixed;
+    display: flex;
+    opacity: 1;
+    height: 100vh;
+
+    transform: translateX(50vh) translateY(25vh);
+
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 1140px;
+
+	}
+
+}
+
+@media screen and (max-width: 1199px) {
+	.container {
+		width: 960px;
+
+	}
+
+    .navbar {
+        font-size: 1.1rem;
+
+    }
+
+    .advantages .advantages-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+    }
+
+    .advantages-grid .arrow {
+        margin-bottom: 90px;
+        transform: rotate(90deg);
+
+        
+    }
+
+    .invite {
+       height: 400px; 
+
+    }
+
+    .contacts .contacts__block__right {
+        position: relative;
+        overflow: hidden;
+        padding: 5%;
+
+    }
+
+    .camera.is-active {
+        transform: translateX(25vh) translateY(25vh);
+    
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+	.container {
+		width: 720px;
+
+	}
+
+    .text-preview {
+        font-size: 0.5rem;
+
+    }
+
+    .advantages .advantages__cards {
+        align-items: flex-start;
+
+    }
+
+    .advantages .card__title h1 {
+        font-size: 32px;
+        line-height: 1.5;
+
+    }
+
+    .contacts .contacts__block {
+        gap: 50px;
+        flex-direction: column;
+
+    }
+
+    .contacts .contacts__block__right {
+        padding: 5%;
+
+    }
+
+    .toCenter {
+        display: none;
+
+    }
+
+    .toRight {
+        display: none;
+
+    }
+
+    .invite {
+        height: 500px; 
+ 
+     }
+
+}
+
+@media screen and (max-width: 767px) {
+
+	.container {
+		width: 540px;
+
+	}
+
+    .navbar a{
+        display: none;
+
+    }
+
+    .navbar a#logo {
+        display: block;
+
+    }
+
+    .navbar .toLeft a {
+        font-size: 20px;
+
+    }
+
+    .advantages .advantages__title h1 {
+        font-size: 54px;
+        line-height: 1.2;
+
+    }
+
+    .body-inv {
+        /* margin-left: 20px; */
+        width: 400px;
+
+    }
+
+    .invite img {
+        display: none;
+
+    }
+
+    .price .box-group {
+        flex-direction: column;
+
+    }
+
+    .contacts .contacts__block__left h1, p{
+        font-size: 1rem;
+
+    }
+
+    .contacts .phone .left {
+        width: 170px;
+
+    }
+
+    .contacts .phone .right {
+        width: 100px;
+
+    }
+
+    .contacts .mail .left {
+        width: 170px;
+
+    }
+
+    .contacts .mail .right {
+        width: 100px;
+
+    }
+
+    .contacts .contacts__block__right {
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		width: 100%;
+		padding: 0 15px;
+
+	}
+
+    .preview {
+        height: 80vh;
+
+    }
+
+    .text-preview {
+        height: 80vh;
+        font-size: 0.3rem;
+
+    }
+
+    .invite {
+        height: 380px;
+
+    }
+
+}
