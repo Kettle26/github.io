@@ -165,10 +165,10 @@ header {
 
 }
 
-.advantages-grid .arrow {
+/* .advantages-grid .arrow {
     margin-top: 75px;
 
-}
+} */
 
 .price {
     background-color: #272727;
@@ -399,12 +399,12 @@ header {
 
     }
 
-    .advantages-grid .arrow {
+    /* .advantages-grid .arrow {
         margin-bottom: 90px;
         transform: rotate(90deg);
 
         
-    }
+    } */
 
     .invite {
        height: 400px; 
