@@ -125,7 +125,8 @@ header {
 
 .advantages-grid {
     display: grid;
-    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr auto;
+    /* grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr auto; */
+    grid-template-columns: repeat(4, 1fr);
 
     padding-top: 90px;
     padding-bottom: 90px;
@@ -133,6 +134,7 @@ header {
 }
 
 .advantages-grid .card {
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,7 +192,7 @@ header {
 }
 
 .box {
-    width: 400px;
+    width: 350px;
 
     border-width: 2px;
     border-color: var(--bg-orange);
@@ -573,4 +575,15 @@ header {
 
     }
 
+    .invite .first h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+    
+    }    
+
+    .invite .first p {
+        font-size: 2rem;
+        text-transform: uppercase;
+    
+    }
 }
